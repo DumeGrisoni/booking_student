@@ -2,7 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .text-default {
+    @apply text-font-text-desktop leading-font-text-desktop tracking-desktop-ls font-bold;
+  }
+  .active {
+    @apply text-primary-var-2;
+  }
+}
+
 @font-face {
-  font-family: 'CLARRITY';
+  font-family: 'CLARITTY';
   src: url('./fonts/CLARITTB.TTF') format('truetype');
+}
+body {
+  font-family: 'CLARITTY';
+  background-color: #f0f0e9;
 }

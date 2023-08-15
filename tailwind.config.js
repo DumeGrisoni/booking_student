@@ -27,8 +27,8 @@ export default {
       'font-headline-mobile': '35px',
     },
     letterSpacing: {
-      'desktop-ls': '20%',
-      'mobile-ls': '10%',
+      'desktop-ls': '0.2rem',
+      'mobile-ls': '0.1rem',
     },
     extend: {
       spacing: {
