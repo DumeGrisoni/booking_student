@@ -3,7 +3,7 @@ import Button from './Button';
 const TaxBanner = () => {
   return (
     // BANNER PROMO
-    <section className="flex flex-col items-center text-center justify-center gap-[30px] w-[550px] font-bold">
+    <section className="flex flex-col items-center text-center justify-center gap-[20px] lg:gap-[30px] w-[255px] lg:w-[550px] font-bold">
       <h1 className="text-headline text-primary">
         50% <br /> de déduction d&apos;impôts pour tous !
       </h1>

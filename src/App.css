@@ -4,13 +4,13 @@
 
 @layer components {
   .text-default {
-    @apply text-font-text-desktop leading-font-text-desktop tracking-desktop-ls font-bold;
+    @apply text-font-text-mobile lg:text-font-text-desktop leading-font-text-mobile lg:leading-font-text-desktop tracking-mobile-ls lg:tracking-desktop-ls font-bold;
   }
   .text-headline {
-    @apply text-font-headline-desktop leading-font-headline-desktop tracking-desktop-ls;
+    @apply text-font-headline-mobile lg:text-font-headline-desktop leading-font-headline-mobile lg:leading-font-headline-desktop tracking-mobile-ls lg:tracking-desktop-ls;
   }
   .text-title {
-    @apply text-font-title-desktop leading-font-title-desktop tracking-desktop-ls;
+    @apply text-font-title-mobile lg:text-font-title-desktop leading-font-title-mobile lg:leading-font-title-desktop tracking-mobile-ls lg:tracking-desktop-ls;
   }
   .active {
     @apply text-primary-var-2;

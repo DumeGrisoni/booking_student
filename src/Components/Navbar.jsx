@@ -3,8 +3,8 @@ import Logo from '../assets/logo.svg';
 
 const Navbar = () => {
   return (
-    <nav className=" h-[50px] max-h-[50px] sticky top-0 left-0 w-full bg-secondary border-b border-b-grey-font text-grey-font px-[200px]">
-      <ul className=" flex h-full justify-between items-center text-default ">
+    <nav className=" h-[50px] max-h-[50px] sticky top-0 left-0 w-full bg-secondary border-b border-b-grey-font text-grey-font lg:px-[200px]">
+      <ul className="hidden lg:flex h-full justify-between items-center text-default ">
         <li>
           <NavLink
             exact
