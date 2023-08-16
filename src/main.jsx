@@ -8,6 +8,7 @@ import Pricing from './pages/Pricing.jsx';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar.jsx';
+import Footer from './Components/Footer.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -20,6 +21,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/presentation" element={<Presentation />} />
         <Route path="/pricing" element={<Pricing />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   </React.StrictMode>
 );

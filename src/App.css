@@ -10,7 +10,7 @@
     @apply text-font-headline-mobile lg:text-font-headline-desktop leading-font-headline-mobile lg:leading-font-headline-desktop tracking-mobile-ls lg:tracking-desktop-ls;
   }
   .text-title {
-    @apply text-font-title-mobile lg:text-font-title-desktop leading-font-title-mobile lg:leading-font-title-desktop tracking-mobile-ls lg:tracking-desktop-ls;
+    @apply text-font-title-mobile lg:text-font-title-desktop leading-font-title-mobile lg:leading-font-title-desktop tracking-mobile-ls lg:tracking-desktop-ls font-bold;
   }
   .active {
     @apply text-primary-var-2;
