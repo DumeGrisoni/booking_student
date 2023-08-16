@@ -6,6 +6,12 @@
   .text-default {
     @apply text-font-text-desktop leading-font-text-desktop tracking-desktop-ls font-bold;
   }
+  .text-headline {
+    @apply text-font-headline-desktop leading-font-headline-desktop tracking-desktop-ls;
+  }
+  .text-title {
+    @apply text-font-title-desktop leading-font-title-desktop tracking-desktop-ls;
+  }
   .active {
     @apply text-primary-var-2;
   }
