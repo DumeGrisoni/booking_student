@@ -11,12 +11,10 @@ const Navbar = () => {
             to="/"
             className="flex items-center justify-center gap-2 "
           >
-            <img src={Logo} width={37} />
+            <img src={Logo} width={50} />
             <span className="text-font-title-desktop text-primary flex gap-2 ">
               J&apos;accroche{' '}
-              <span className="text-primary-var-1 text-font-headline-desktop">
-                +
-              </span>
+              <span className="text-primary-var-1 text-[30px]">+</span>
             </span>
           </NavLink>
         </li>
