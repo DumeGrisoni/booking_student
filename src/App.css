@@ -19,7 +19,7 @@
 
 @font-face {
   font-family: 'CLARITTY';
-  src: url('./fonts/CLARITTB.TTF') format('truetype');
+  src: url('./CLARITTB.TTF') format('truetype');
 }
 body {
   font-family: 'CLARITTY';
