@@ -10,7 +10,7 @@
     @apply text-font-headline-mobile lg:text-font-headline-desktop leading-font-headline-mobile lg:leading-font-headline-desktop tracking-mobile-ls lg:tracking-desktop-ls;
   }
   .text-title {
-    @apply text-font-title-mobile lg:text-font-title-desktop leading-font-title-mobile lg:leading-font-title-desktop tracking-mobile-ls lg:tracking-desktop-ls font-bold;
+    @apply text-font-title-mobile lg:text-font-title-desktop leading-font-title-mobile lg:leading-font-title-desktop tracking-mobile-ls lg:tracking-desktop-ls;
   }
   .active {
     @apply text-primary-var-2;
@@ -24,4 +24,13 @@
 body {
   font-family: 'CLARITTY';
   background-color: #f0f0e9;
+  padding: 0;
+  margin: 0;
+  z-index: 2;
+}
+
+@media screen and (max-width: 1280px) {
+  body {
+    margin-top: 80px;
+  }
 }

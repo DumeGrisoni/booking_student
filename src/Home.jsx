@@ -5,7 +5,7 @@ import image from './assets/image.jpg';
 
 function Home() {
   return (
-    <div className="px-[2rem] lg:px-[8rem] my-text flex flex-col gap-[20px] lg:gap-[50px]">
+    <div className="px-[2rem] lg:px-[8rem] lg:my-text flex flex-col gap-[20px] lg:gap-[50px]">
       <section className="flex flex-col items-center mx-auto gap-[20px] lg:gap-[50px]">
         <TaxBanner />
         <OfferBanner />

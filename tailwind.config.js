@@ -8,6 +8,7 @@ export default {
       'primary-var-2': '#9747FF',
       secondary: '#F0F0E9',
       'secondary-var-1': '#EBEBDE',
+      'secondary-blur': '#66666690',
       'grey-font': '#666666',
     },
     fontSize: {
