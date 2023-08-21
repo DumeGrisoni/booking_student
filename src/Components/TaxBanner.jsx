@@ -5,7 +5,7 @@ const TaxBanner = () => {
     // BANNER PROMO
     <section className="flex flex-col items-center text-center justify-center gap-[20px] lg:gap-[30px] w-[300px] lg:w-[550px] font-bold">
       <h1 className="text-headline text-primary">
-        50% <br /> de déduction d&apos;impôts pour tous !
+        50% <br /> de crédit d&apos;impôts pour tous !
       </h1>
       <h2 className="text-title text-primary-var-1 w-[80%]">
         J’accroche + est une entreprise déclarée !

@@ -1,5 +1,13 @@
+/* eslint-disable react/prop-types */
 // eslint-disable-next-line react/prop-types
-const PricingContainer = ({ title, children, price }) => {
+const PricingContainer = ({
+  title,
+  children,
+  price,
+  secondPrice,
+  hour,
+  secondHour,
+}) => {
   return (
     <div className="w-[300px] h-auto lg:h-[1100px] flex flex-col border items-center border-grey-font rounded-md shadow-md shadow-grey-font">
       {/* TITLE SECTION */}
@@ -11,9 +19,26 @@ const PricingContainer = ({ title, children, price }) => {
         <p>{children}</p>
       </div>
       {/* PRICE SECTION */}
-      <div className="flex h-auto p-10 lg:p-0 lg:h-[200px] border-t text-default border-grey-font w-full items-center text-title bg-primary-var-1 text-secondary-var-1 justify-center">
-        <p>{price}</p>
-      </div>
+      {!secondPrice ? (
+        <div className=" font-bold flex h-auto p-10 lg:p-0 lg:h-[200px] border-t text-default border-grey-font w-full items-center text-title bg-primary-var-1 text-secondary-var-1 justify-center">
+          <div className="flex flex-col gap-10 justify-center items-center">
+            {hour ? <span className="font-bold">{hour}</span> : ''}
+            <p>{price}</p>
+          </div>
+        </div>
+      ) : (
+        <div className="font-bold flex h-auto p-10 lg-p-0 lg:h-[200px] border-t text-default gap-7 border-grey-font w-full items-center text-title bg-primary-var-1 text-secondary-var-1 justify-center ">
+          <div className="flex flex-col justify-center items-center gap-10 text-center">
+            <span>{hour}</span>
+            <span>{price}</span>
+          </div>
+          <hr className="bg-secondary h-[100px] w-[1px]" />
+          <div className="flex flex-col justify-center items-center gap-10 text-center">
+            <span>{secondHour}</span>
+            <span>{secondPrice}</span>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
