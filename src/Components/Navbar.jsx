@@ -28,6 +28,7 @@ const Navbar = () => {
               exact
               to="/"
               className="lg:relative absolute left-0 top-0  ml-3 mt-3 lg:ml-0 lg:mt-0"
+              onClick={() => setIsOpen(!isOpen)}
             >
               <span className=" flex items-center justify-center text-title text-primary gap-2 ">
                 <img src={Logo} className="lg:w-[50px] w-[25px]" />
@@ -62,6 +63,7 @@ const Navbar = () => {
                       ? 'active-link hover:text-primary-var-1 text-title lg:font-normal font-bold ease-in-out transition-all duration-100'
                       : 'hover:text-primary-var-1 text-title lg:font-normal font-bold text-grey-font ease-in-out transition-all duration-100'
                   }
+                  onClick={() => setIsOpen(!isOpen)}
                 >
                   {link.name}
                 </NavLink>
