@@ -1,5 +1,98 @@
+import { Link, NavLink } from 'react-router-dom';
+import Text from '../Components/Text';
+import facebookIcon from '../assets/facebookIcon.svg';
+import instagramIcon from '../assets/instagramIcon.svg';
+import emailIcon from '../assets/emailIcon.svg';
+import FormInput from '../Components/FormInput';
+import phoneIcon from '../assets/phoneIcon.svg';
+
 const Contact = () => {
-  return <div>Contact</div>;
+  return (
+    <div className="flex flex-col justify-start items-center gap-10 lg:gap-16 px-[2rem] my-8 lg:px-[8rem] w-full mb-7">
+      <section className="">
+        <Text title="Besoin d'aide ?">
+          <p>
+            Pour toutes questions n&apos;hésitez pas à me{' '}
+            <NavLink to="/contact" className="external-link">
+              contacter
+            </NavLink>
+            .
+          </p>
+          <p>
+            Vous pouvez également contacter{' '}
+            <a
+              href="https://corsica-dys-tdah.assoconnect.com/page/1465993-accueil"
+              className="external-link"
+            >
+              l&apos;association Corsica Dys-Tdah
+            </a>{' '}
+            !
+          </p>
+          <p>
+            Pour une petite recherche sur les aides financière voici un premier
+            site qui pourra déjà vous donner quelques pistes :{' '}
+            <a
+              href="https://annuaire.action-sociale.org/"
+              className="external-link"
+            >
+              https://annuaire.action-sociale.org/
+            </a>
+          </p>
+        </Text>
+      </section>
+      <section className="flex lg:flex-row flex-col gap-7 w-full mx-auto lg:items-start text-center lg:text-start ">
+        <div className="flex flex-col gap-5 lg:gap-7 flex-1">
+          <h1 className="text-headline text-primary font-bold">Contacts</h1>
+          <ul className="flex flex-col justify-start items-start pl-5 gap-7 text-bold text-grey-font">
+            <li>
+              <Link
+                to="https://www.facebook.com/profile.php?id=100092444294604"
+                className="flex justify-center items-center gap-5"
+                target="_blank"
+              >
+                <img src={facebookIcon} alt="Icone facebook" />
+                <span>J&apos;accroche Plus</span>
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="https://www.instagram.com/jaccroche_plus/"
+                className="flex justify-center items-center gap-5"
+                target="_blank"
+              >
+                <img src={instagramIcon} alt="Icone instagram" />
+                <span>jaccroche_plus</span>
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="mailto:jaccrocheplus@gmail.com"
+                className="flex justify-center items-center gap-5"
+              >
+                <img src={emailIcon} alt="Icone Email" />
+                <span>jaccrocheplus@gmail.com</span>
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="tel:0625745569"
+                className="flex justify-center items-center gap-5"
+              >
+                <img src={phoneIcon} alt="Icone Phone" />
+                <span>0625745569</span>
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="flex flex-col lg:gap-7 gap-5 justify-center items-center">
+          <h2 className="font-bold text-title text-primary">
+            Envoyez-nous un message
+          </h2>
+          <FormInput />
+        </div>
+      </section>
+    </div>
+  );
 };
 
 export default Contact;

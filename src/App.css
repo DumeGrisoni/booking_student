@@ -12,11 +12,17 @@
   .text-title {
     @apply text-font-title-mobile lg:text-font-title-desktop leading-font-title-mobile lg:leading-font-title-desktop tracking-mobile-ls lg:tracking-desktop-ls;
   }
-  .active {
-    @apply text-primary-var-2;
+  .active-link {
+    @apply text-primary-var-2 transition-all ease-in duration-100;
   }
   .text-bold {
     @apply text-font-text-mobile lg:text-font-text-desktop leading-font-text-mobile lg:leading-font-text-desktop tracking-mobile-ls lg:tracking-desktop-ls font-bold;
+  }
+  .external-link {
+    @apply text-primary-var-2 hover:text-primary transition-all ease-in-out duration-100 font-bold;
+  }
+  .form-input {
+    @apply text-default text-grey-font font-bold w-full flex flex-col gap-5;
   }
 }
 
@@ -34,6 +40,6 @@ body {
 
 @media screen and (max-width: 1280px) {
   body {
-    margin-top: 80px;
+    padding-top: 4rem;
   }
 }

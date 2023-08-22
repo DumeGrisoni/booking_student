@@ -21,17 +21,17 @@ const Footer = () => {
         <ul className="flex gap-10">
           <li>
             <Link to="/">
-              <img src={facebookIcon} alt="" />
+              <img src={facebookIcon} alt="Logo facebook" />
             </Link>
           </li>
           <li>
             <Link to="/">
-              <img src={instagramIcon} alt="" />
+              <img src={instagramIcon} alt="logo instagram" />
             </Link>
           </li>
           <li>
             <Link to="/">
-              <img src={emailIcon} alt="" />
+              <img src={emailIcon} alt="logo mail" />
             </Link>
           </li>
         </ul>

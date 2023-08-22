@@ -57,9 +57,11 @@ const Navbar = () => {
               <li key={link.name} className="lg:py-0 py-1">
                 <NavLink
                   to={link.link}
-                  exact
-                  className="hover:text-primary-var-1 text-title lg:font-normal font-bold text-grey-font ease-in-out transition-all duration-100"
-                  activeClassName="active"
+                  className={({ isActive }) =>
+                    isActive
+                      ? 'active-link hover:text-primary-var-1 text-title lg:font-normal font-bold ease-in-out transition-all duration-100'
+                      : 'hover:text-primary-var-1 text-title lg:font-normal font-bold text-grey-font ease-in-out transition-all duration-100'
+                  }
                 >
                   {link.name}
                 </NavLink>
