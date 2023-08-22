@@ -20,17 +20,23 @@ const Footer = () => {
         <h2 className="text-primary ">Contacts</h2>
         <ul className="flex gap-10">
           <li>
-            <Link to="/">
+            <Link
+              to="https://www.facebook.com/profile.php?id=100092444294604"
+              target="_blank"
+            >
               <img src={facebookIcon} alt="Logo facebook" />
             </Link>
           </li>
           <li>
-            <Link to="/">
+            <Link
+              to="https://www.instagram.com/jaccroche_plus/"
+              target="_blank"
+            >
               <img src={instagramIcon} alt="logo instagram" />
             </Link>
           </li>
           <li>
-            <Link to="/">
+            <Link to="mailto:jaccrocheplus@gmail.com">
               <img src={emailIcon} alt="logo mail" />
             </Link>
           </li>

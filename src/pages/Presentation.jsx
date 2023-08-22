@@ -13,6 +13,8 @@ const Presentation = () => {
             <a
               className="external-link"
               href="https://corsica-dys-tdah.assoconnect.com/page/1467509-quesaco"
+              target="_blank"
+              rel="noreferrer"
             >
               trouble
             </a>{' '}
@@ -23,13 +25,15 @@ const Presentation = () => {
         <Text>
           <p className="font-bold">Si vous avez besoin de soutient afin :</p>{' '}
           <p>
-            D&apos;élaborer les différents dossiers ({' '}
+            D&apos;élaborer les différents dossiers (
             <a
               className="external-link"
               href="https://www.monparcourshandicap.gouv.fr/scolarite/ppre-pai-pap-pps-en-quoi-consistent-les-differentes-possibilites-dappui-la-scolarisation"
+              target="_blank"
+              rel="noreferrer"
             >
               MDPH, PPRE, PPS, PAP, etc
-            </a>{' '}
+            </a>
             ) nous pourront également vous orienter afin de maximiser vos
             chances d&apos;avoir un avis favorable. D&apos;organiser une
             médiation avec léapos;établissement scolaire. De trouver des

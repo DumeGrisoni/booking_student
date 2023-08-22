@@ -35,7 +35,16 @@ function Home() {
                 Au sein des établissement les professeurs n&apos;ont pas tous
                 les moyens et le temps de mettre en place de nouvelles
                 pédagogies favorisant l&apos;hétérogénéité des profils et ce
-                malgré la mise en place de la différenciation pédagogique.
+                malgré la mise en place de la{' '}
+                <a
+                  href="https://www.cairn.info/revue-administration-et-education-2016-2-page-159.htm#:~:text=La%20p%C3%A9dagogie%20diff%C3%A9renci%C3%A9e%20%3A%20elle%20se,comme%20celui%20qui%20fait%20apprendre"
+                  className="external-link"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  différenciation pédagogique
+                </a>
+                .
               </p>
               <p>
                 Je m&apos;appelle Julie, je suis une jeune femme hypersensible

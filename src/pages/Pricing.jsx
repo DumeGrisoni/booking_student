@@ -1,9 +1,15 @@
 import Button from '../Components/Button.jsx';
 import PricingContainer from '../Components/PricingContainer.jsx';
+import TaxBanner from '../Components/TaxBanner.jsx';
 import Text from '../Components/Text.jsx';
 const Pricing = () => {
   return (
-    <div className="flex flex-col justify-center gap-8 items-center m-10">
+    <div className="flex flex-col justify-center gap-10 items-center m-10">
+      <TaxBanner />
+      <p className="text-default text-primary">
+        Je vous conseille de joindre les documents directement avec votre
+        déclaration de revenus.
+      </p>
       <p className="text-title text-primary-var-1 text-center">
         Déplacement en région bastiaise, Corse, suivi à domicile.
         <br /> Me contacter pour plus d&apos;informations.

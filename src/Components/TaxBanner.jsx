@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Button from './Button';
 
 const TaxBanner = () => {
@@ -10,8 +11,14 @@ const TaxBanner = () => {
       <h2 className="text-title text-primary-var-1 w-[80%]">
         J’accroche + est une entreprise déclarée !
       </h2>
-      <Button onClick={console.log('ca marche')}>
-        Voir la démarche à suivre
+
+      <Button>
+        <Link
+          to="https://www.impots.gouv.fr/particulier/emploi-domicile"
+          target="_blank"
+        >
+          Voir la démarche à suivre
+        </Link>
       </Button>
     </section>
   );
