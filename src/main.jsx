@@ -9,18 +9,21 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar.jsx';
 import Footer from './Components/Footer.jsx';
+import ScrollToTop from './ScrollToTop.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
       <Navbar />
-      <Routes>
-        <Route exact path="/" element={<App />} />
-        <Route exact path="/bookings" element={<Bookings />} />
-        <Route exact path="/contact" element={<Contact />} />
-        <Route exact path="/presentation" element={<Presentation />} />
-        <Route exact path="/pricing" element={<Pricing />} />
-      </Routes>
+      <ScrollToTop>
+        <Routes>
+          <Route exact path="/" element={<App />} />
+          <Route exact path="/bookings" element={<Bookings />} />
+          <Route exact path="/contact" element={<Contact />} />
+          <Route exact path="/presentation" element={<Presentation />} />
+          <Route exact path="/pricing" element={<Pricing />} />
+        </Routes>
+      </ScrollToTop>
       <Footer />
     </BrowserRouter>
   </React.StrictMode>
