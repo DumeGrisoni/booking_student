@@ -79,12 +79,12 @@ const Contact = () => {
                 className="flex justify-center items-center gap-5"
               >
                 <img src={phoneIcon} alt="Icone Phone" />
-                <span>0625745569</span>
+                <span>06 25 74 55 69</span>
               </Link>
             </li>
           </ul>
         </div>
-        <div className="flex flex-col lg:gap-7 gap-5 justify-center items-center">
+        <div className="flex flex-col lg:gap-7 gap-5 items-center lg:mr-[100px] mt-5 lg:mt-10">
           <h2 className="font-bold text-title text-primary">
             Envoyez-nous un message
           </h2>

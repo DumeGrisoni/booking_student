@@ -21,7 +21,7 @@ function Home() {
           />
         </section>
         {/* SECTION TEXTE */}
-        <section className="flex lg:flex-1 flex-col justify-start justify-center lg:items-start gap-[20px] lg:gap-[30px] text-primary text-justify mb-8">
+        <section className="flex lg:flex-1 flex-col lg:justify-start justify-center lg:items-start gap-[20px] lg:gap-[30px] text-primary text-justify mb-8">
           <div className="text-headline text-primary flex gap-2 lg:gap-3 justify-center items-center">
             <img src={logo} alt="Logo" className="lg:w-[100px] w-[50px] " />
             <h1 className="font-bold">J&apos;accroche </h1>
