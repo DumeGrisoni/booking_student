@@ -17,42 +17,42 @@ const Pricing = () => {
           secondHour="10 Heures"
         >
           <ul className="flex flex-col text-default gap-7">
-            <li>Aide aux devoirs.</li>
-            <li>Révisions des notions.</li>
+            <li>- Aide aux devoirs.</li>
+            <li>- Révisions des notions.</li>
             <li className="text-bold">
-              Renforcement des clés et outils utilisés avec ses spécialistes
+              - Renforcement des clés et outils utilisés avec ses spécialistes
               (graphie, motricité, mémoire, outils numériques etc.).
             </li>
-            <li>Mise en place des stratégies.</li>
-            <li>Découvrir son propre mode de fonctionnement.</li>
+            <li>- Mise en place des stratégies.</li>
+            <li>- Découvrir son propre mode de fonctionnement.</li>
           </ul>
         </PricingContainer>
         <PricingContainer title="Enfant Déscolarisé" price="240€">
           <ul className="flex flex-col gap-7 text-default">
             <li className="text-bold">
-              Intégrer les notions de la semaine passée dans la mémoire à long
+              - Intégrer les notions de la semaine passée dans la mémoire à long
               terme.
             </li>
-            <li>Travailler les notions difficiles.</li>
-            <li>Mettre en place des stratégies.</li>
-            <li>Découvrir son propre mode de fonctionnement.</li>
-            <li>Une journée par semaine (lundin mardi, jeudi ou vendredi)</li>
+            <li>- Travailler les notions difficiles.</li>
+            <li>- Mettre en place des stratégies.</li>
+            <li>- Découvrir son propre mode de fonctionnement.</li>
+            <li>- Une journée par semaine (lundin mardi, jeudi ou vendredi)</li>
             <li className="text-bold">
-              Tarif pour 4 journées dans le mois ( 4 heures par jour).
+              - Tarif pour 4 journées dans le mois ( 4 heures par jour).
             </li>
           </ul>
         </PricingContainer>
         <PricingContainer title="Stage d'Eté" price="240€">
           <ul className="flex flex-col gap-7">
             <li className="text-bold">
-              Groupe de 4 à 5 enfants de même niveau (scolaire).
+              - Groupe de 4 à 5 enfants de même niveau (scolaire).
             </li>
-            <li className="text-bold">Une semaine, 4 heures par jour.</li>
-            <li className="text-bold">Révisions approfondies.</li>
-            <li>Mise en place de stratégies.</li>
-            <li>Découvrir son propre mode de fonctionnement.</li>
-            <li className="text-bold">Travail de socialisation.</li>
-            <li className="text-bold">Aide par le tutorat.</li>
+            <li className="text-bold">- Une semaine, 4 heures par jour.</li>
+            <li className="text-bold">- Révisions approfondies.</li>
+            <li>- Mise en place de stratégies.</li>
+            <li>- Découvrir son propre mode de fonctionnement.</li>
+            <li className="text-bold">- Travail de socialisation.</li>
+            <li className="text-bold">- Aide par le tutorat.</li>
           </ul>
         </PricingContainer>
         <PricingContainer
@@ -61,11 +61,11 @@ const Pricing = () => {
           hour="5H / Jour ou 4H /jour"
         >
           <ul className="flex flex-col gap-7 text-default">
-            <li>4 à 5 heures par jour suivant ses besoins.</li>
-            <li>Préparation aux épreuves de Brevet.</li>
-            <li className="text-bold">Acquisition de l&apos;organisation.</li>
-            <li className="text-bold">Travail émotionnel.</li>
-            <li>Sujet blanc.</li>
+            <li>- 4 à 5 heures par jour suivant ses besoins.</li>
+            <li>- Préparation aux épreuves de Brevet.</li>
+            <li className="text-bold">- Acquisition de l&apos;organisation.</li>
+            <li className="text-bold">- Travail émotionnel.</li>
+            <li>- Sujet blanc.</li>
           </ul>
         </PricingContainer>
       </div>
