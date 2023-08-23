@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './Home.jsx';
+import './Components/Calendar/Calendar.css';
 import Bookings from './pages/Bookings.jsx';
 import Contact from './pages/Contact.jsx';
 import Presentation from './pages/Presentation.jsx';

@@ -4,7 +4,7 @@ import Calendar from '../Components/Calendar/Calendar.jsx';
 
 const Bookings = () => {
   return (
-    <div className="flex flex-col lg:items-start items-center gap-10 px-[2rem] lg:px-[8rem] my-7">
+    <div className="flex flex-col lg:items-start items-center gap-10 px-[2rem] lg:px-[8rem] my-7 lg:h-[100vh]">
       <h1 className="text-headline text-primary font bold">Réservation</h1>
       <div className="flex flex-col lg:flex-row mx-auto w-full gap-10 lg:gap-[100px]">
         <div className="flex flex-col gap-7 lg:gap-10 flex-1">
