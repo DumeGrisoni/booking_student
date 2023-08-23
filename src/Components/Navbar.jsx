@@ -25,7 +25,6 @@ const Navbar = () => {
           <div className="flex justify-center items-center text-center">
             {/* LOGO */}
             <NavLink
-              exact
               to="/"
               className="lg:relative absolute left-0 top-0  ml-3 mt-3 lg:ml-0 lg:mt-0"
               onClick={() => setIsOpen(!isOpen)}

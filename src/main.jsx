@@ -17,11 +17,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Navbar />
       <ScrollToTop>
         <Routes>
-          <Route exact path="/" element={<App />} />
-          <Route exact path="/bookings" element={<Bookings />} />
-          <Route exact path="/contact" element={<Contact />} />
-          <Route exact path="/presentation" element={<Presentation />} />
-          <Route exact path="/pricing" element={<Pricing />} />
+          <Route path="/" element={<App />} />
+          <Route path="/bookings" element={<Bookings />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/presentation" element={<Presentation />} />
+          <Route path="/pricing" element={<Pricing />} />
         </Routes>
       </ScrollToTop>
       <Footer />

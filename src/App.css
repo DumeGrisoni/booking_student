@@ -24,6 +24,15 @@
   .form-input {
     @apply text-default text-grey-font font-bold w-full flex flex-col gap-5;
   }
+  .calendar-container {
+    @apply w-[450px] max-w-full  border border-grey-font rounded-md text-default text-grey-font bg-secondary-var-1 p-7 shadow-md shadow-secondary-blur flex flex-col;
+  }
+  .react-calendar__navigation {
+    @apply flex gap-7 text-primary;
+  }
+  .react-calendar__navigation .react-calendar__navigation__label {
+    @apply font-bold text-title capitalize text-primary;
+  }
 }
 
 @font-face {

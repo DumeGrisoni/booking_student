@@ -1,0 +1,14 @@
+/* ~~~ container styles ~~~ */
+/* ... */
+
+/* ~~~ navigation styles ~~~ */
+
+.react-calendar__navigation .react-calendar__navigation__label {
+  font-weight: bold;
+  font-size: larger;
+  text-transform: capitalize;
+}
+
+.react-calendar__navigation .react-calendar__navigation__arrow {
+  flex-grow: 0.333;
+}

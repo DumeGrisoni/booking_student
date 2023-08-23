@@ -1,5 +1,6 @@
 import Text from '../Components/Text.jsx';
-import FormInput from '../Components/FormInput.jsx';
+import BookingForm from '../Components/BookingForm.jsx';
+import Calendar from '../Components/Calendar/Calendar.jsx';
 
 const Bookings = () => {
   return (
@@ -7,12 +8,12 @@ const Bookings = () => {
       <h1 className="text-headline text-primary font bold">Réservation</h1>
       <div className="flex flex-col lg:flex-row mx-auto w-full gap-10 lg:gap-[100px]">
         <div className="flex flex-col gap-7 lg:gap-10 flex-1">
-          <FormInput />
+          <BookingForm />
           <section className="flex flex-col items-center gap-7">
-            <h2 className="text-title font-bold text-primary">
+            <h2 className="text-default font-bold text-primary">
               Choisir une date
             </h2>
-            <FormInput />
+            <Calendar />
           </section>
         </div>
         <div className="flex flex-col h-full gap-7 lg:gap-[100px] flex-2">
