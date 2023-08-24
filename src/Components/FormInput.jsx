@@ -9,18 +9,18 @@ const FormInput = () => {
         placeholder="Email"
         className="p-1 w-full rounded-md border border-grey-font"
       />
-      <div className="flex gap-3">
+      <div className="flex gap-3 w-full">
         <input
           name="postalCode"
           type="text"
           placeholder="Code Postale"
-          className="p-1 border-grey-font border rounded-md"
+          className="p-1 border-grey-font border rounded-md w-[50%]"
         />
         <input
           name="city"
           type="text"
           placeholder="Ville"
-          className="p-1 border-grey-font border rounded-md flex-1 "
+          className="p-1 border-grey-font border rounded-md w-[50%] "
         />
       </div>
       <input
