@@ -1,6 +1,7 @@
 import { FC, useState } from 'react';
 import ReactCalendar from 'react-calendar';
-import { add, format } from 'date-fns';
+import { add, addMinutes, format } from 'date-fns';
+import { formatDate } from 'react-calendar/dist/cjs/shared/dateFormatter';
 
 interface indexProps {}
 
@@ -14,6 +15,8 @@ const Calendar: FC<indexProps> = ({}) => {
     onlyDate: null,
     dateTime: null,
   });
+
+  const [selected, setSelected] = useState(false);
 
   const getHours = () => {
     if (!date.onlyDate) return;
@@ -35,6 +38,7 @@ const Calendar: FC<indexProps> = ({}) => {
   };
 
   const hours = getHours();
+  console.log(date.dateTime);
 
   return (
     <div className="flex flex-col gap-7">
@@ -42,12 +46,15 @@ const Calendar: FC<indexProps> = ({}) => {
         minDate={new Date()}
         view="month"
         onClickDay={(date) => setDate((prev) => ({ ...prev, onlyDate: date }))}
+        tileDisabled={({ date, view }) =>
+          (view === 'month' && date.getDay() === 0) || date.getDay() === 6
+        }
         className="shadow-md shadow-secondary-blur rounded-md bg-secondary-var-1 w-[350px] lg:w-[450px] max-w-[350px] lg:max-w-full border border-secondary-blur p-0 lg:p-2 text-title lg:text-default"
       />
       {hours ? (
         <div className="flex flex-col gap-7">
           <div className="text-default font-bold text-center text-primary ">
-            Selectionnez une heure
+            Selectionnez une heure pour le {date.onlyDate?.toLocaleDateString()}
           </div>
           <div className="flex justify-around items-center">
             {hours?.map((hour, i) => (
@@ -66,6 +73,15 @@ const Calendar: FC<indexProps> = ({}) => {
               </div>
             ))}
           </div>
+          <p className="font-bold text-primary text-center">
+            {date.dateTime && date.onlyDate
+              ? 'Le ' +
+                date.onlyDate.toLocaleDateString() +
+                ' à ' +
+                format(date.dateTime, 'kk:mm') +
+                'H'
+              : ''}
+          </p>
         </div>
       ) : (
         <div></div>

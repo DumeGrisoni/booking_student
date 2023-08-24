@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import Button from '../Components/Button.jsx';
 import PricingContainer from '../Components/PricingContainer.jsx';
 import TaxBanner from '../Components/TaxBanner.jsx';
@@ -48,7 +49,11 @@ const Pricing = () => {
             </li>
           </ul>
         </PricingContainer>
-        <PricingContainer title="Stage d'Eté" price="240€">
+        <PricingContainer
+          title="Stage d'Eté"
+          hour="Nous Contacter"
+          price="240€"
+        >
           <ul className="flex flex-col gap-7">
             <li className="text-bold">
               - Groupe de 4 à 5 enfants de même niveau (scolaire).
@@ -61,11 +66,7 @@ const Pricing = () => {
             <li className="text-bold">- Aide par le tutorat.</li>
           </ul>
         </PricingContainer>
-        <PricingContainer
-          title="Stage Préparation DNB"
-          price="Nous Contacter"
-          hour="5H / Jour ou 4H /jour"
-        >
+        <PricingContainer title="Stage Préparation DNB" price="Nous Contacter">
           <ul className="flex flex-col gap-7 text-default">
             <li>- 4 à 5 heures par jour suivant ses besoins.</li>
             <li>- Préparation aux épreuves de Brevet.</li>
@@ -75,7 +76,9 @@ const Pricing = () => {
           </ul>
         </PricingContainer>
       </div>
-      <Button className="">Réserver</Button>
+      <Button>
+        <NavLink to="/bookings">Réserver</NavLink>
+      </Button>
       <div className="flex lg:w-[70%] justify-center  items-center">
         <Text>
           L&apos;entreprise se réserve le droit de modifier unilatéralement les

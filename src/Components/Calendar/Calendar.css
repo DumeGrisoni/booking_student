@@ -17,6 +17,9 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+.selected {
+  background-color: #4f46e5;
+}
 
 .react-calendar button {
   margin: 0;

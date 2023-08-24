@@ -1,10 +1,11 @@
 import Text from '../Components/Text.jsx';
+import Button from '../Components/Button.jsx';
 import BookingForm from '../Components/BookingForm.jsx';
 import Calendar from '../Components/Calendar/Calendar.tsx';
 
 const Bookings = () => {
   return (
-    <div className="flex flex-col lg:items-start items-center gap-10 px-[2rem] lg:px-[8rem] my-7 lg:h-[105vh]">
+    <div className="flex flex-col lg:items-start items-center gap-10 px-[2rem] lg:px-[8rem] my-7 lg:h-[115vh]">
       <h1 className="text-headline text-primary font bold">Réservation</h1>
       <div className="flex flex-col lg:flex-row mx-auto w-full gap-10 lg:gap-[100px]">
         <div className="flex flex-col gap-7 lg:gap-10 flex-1">
@@ -14,6 +15,7 @@ const Bookings = () => {
               Choisir une date
             </h2>
             <Calendar />
+            <Button>Confirmer</Button>
           </section>
         </div>
         <div className="flex flex-col h-full gap-7 lg:gap-[100px] flex-2">
