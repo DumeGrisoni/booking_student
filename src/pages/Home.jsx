@@ -61,7 +61,7 @@ function Home() {
                 rendre heureux d&apos;apprendre de manière efficace.
               </p>
               <p>
-                Je me déplace sur la région bastiaise, Entre Bastia et Casamozza
+                Je me déplace sur la région bastiaise, entre Bastia et Casamozza
                 mais n&apos;hésitez pas à me contacter pour tous renseignements.
               </p>
             </Text>

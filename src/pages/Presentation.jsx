@@ -6,10 +6,10 @@ const Presentation = () => {
       <section className="bg-secondary-var-1 h-full px-[2rem] lg:px-[8rem] lg:py-10 py-5 w-full flex flex-col gap-4 lg:gap-7">
         <Text title="Pour qui sont destinés ces cours ?">
           <p>
-            Pour tous les élèves de la maternelle à la 3ème. Les troubles des
-            apprentissages peuvent être un frein si l&apos;enfant n&apos;a pas
-            pris l&apos;habitude de les voir comme une force ! Si votre enfant
-            présente un{' '}
+            <b>Pour tous les élèves de la maternelle à la 3ème.</b> Les troubles
+            des apprentissages peuvent être un frein si l&apos;enfant n&apos;a
+            pas pris l&apos;habitude de les voir comme une force ! Si votre
+            enfant présente un{' '}
             <a
               className="external-link"
               href="https://corsica-dys-tdah.assoconnect.com/page/1467509-quesaco"
@@ -25,7 +25,7 @@ const Presentation = () => {
         <Text>
           <p className="font-bold">Si vous avez besoin de soutient afin :</p>{' '}
           <p>
-            D&apos;élaborer les différents dossiers (
+            - D&apos;élaborer les différents dossiers (
             <a
               className="external-link"
               href="https://www.monparcourshandicap.gouv.fr/scolarite/ppre-pai-pap-pps-en-quoi-consistent-les-differentes-possibilites-dappui-la-scolarisation"
@@ -35,9 +35,10 @@ const Presentation = () => {
               MDPH, PPRE, PPS, PAP, etc
             </a>
             ) nous pourront également vous orienter afin de maximiser vos
-            chances d&apos;avoir un avis favorable. D&apos;organiser une
-            médiation avec léapos;établissement scolaire. De trouver des
-            solutions pour la vie et léapos;organisation à la maison.
+            chances d&apos;avoir un avis favorable.
+            <br />- D&apos;organiser une médiation avec l&apos;équipe
+            pédalogique de l&apos;établissement scolaire. <br />- De trouver des
+            solutions pour la vie et l&apos;organisation à la maison.
           </p>
         </Text>
       </section>

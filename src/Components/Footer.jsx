@@ -16,8 +16,11 @@ const Footer = () => {
         </Link>
       </div>
       {/* RIGHT PART > BOTTOM PART */}
-      <div className="flex flex-col gap-5 lg:gap-10 items-center lg:mb-0 mb-5">
+      <div className="flex flex-col gap-3 lg:gap-5 items-center lg:mb-0 mb-5">
         <h2 className="text-primary ">Contacts</h2>
+        <p className="text-default text-primary">
+          <b>Tel:</b> 06 25 74 55 69
+        </p>
         <ul className="flex gap-10">
           <li>
             <Link

@@ -4,16 +4,11 @@ import Button from '../Components/Button.jsx';
 import BookingForm from '../Components/BookingForm.jsx';
 import Calendar from '../Components/Calendar/Calendar.tsx';
 import { useState, useEffect } from 'react';
-import { createClient } from '@supabase/supabase-js';
-import Login from '../Components/Login.jsx';
+import { supabase } from '../lib/helpers/supabaseClient.js';
+import Login from '../Components/Clients/Login.jsx';
 
 const Bookings = () => {
   const [session, setSession] = useState(null);
-
-  const supabase = createClient(
-    import.meta.env.VITE_SUPABASE_URL,
-    import.meta.env.VITE_SUPABASE_ANON_KEY
-  );
 
   useEffect(() => {
     supabase.auth.getSession().then(({ data: { session } }) => {

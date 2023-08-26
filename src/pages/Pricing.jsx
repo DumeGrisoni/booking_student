@@ -19,9 +19,9 @@ const Pricing = () => {
         <PricingContainer
           title="Cours particuliers"
           price="30€"
-          secondPrice="250€"
+          secondPrice="220€"
           hour="1 Heure"
-          secondHour="10 Heures"
+          secondHour="8 Heures"
         >
           <ul className="flex flex-col text-default gap-7">
             <li>- Aide aux devoirs.</li>
@@ -43,7 +43,7 @@ const Pricing = () => {
             <li>- Travailler les notions difficiles.</li>
             <li>- Mettre en place des stratégies.</li>
             <li>- Découvrir son propre mode de fonctionnement.</li>
-            <li>- Une journée par semaine (lundin mardi, jeudi ou vendredi)</li>
+            <li>- Une journée par semaine (lundi, mardi, jeudi ou vendredi)</li>
             <li className="text-bold">
               - Tarif pour 4 journées dans le mois ( 4 heures par jour).
             </li>
