@@ -75,7 +75,7 @@ const Presentation = () => {
               <p className="ml-16 mb-7">- Analyse des profils</p>
             </li>
             <li>
-              <p className="ml-16 mb-7">
+              <p className="ml-16">
                 - Analyse des besoins et des attentes. Il s&apos;agit de
                 comprendre les besoins de l&apos;enfant.
               </p>
@@ -116,18 +116,21 @@ const Presentation = () => {
                 -Manque de confiance = <b>Pédagogie Freinet</b>
               </p>
             </li>
+            <li>
+              <p>
+                Elle laisse les enfants émettre leurs propres hypothèses, faire
+                leurs propres découvertes et éventuellement constater et
+                admettre leurs échecs tout en parvenant à de belles réussites.
+              </p>
+            </li>
           </ul>
           <p>
-            Elle laisse les enfants émettre leurs propres hypothèses, faire
-            leurs propres découvertes et éventuellement constater et admettre
-            leurs échecs tout en parvenant à de belles réussites.
-          </p>
-          <p className="ml-16">
-            -Manque d&apos;investissement scolaire, Fatigue, impression de ne
-            pas être à la hauteur (et nous savons à quel point il y en a ...) =
-            <b> Méthode Decroly</b>
-          </p>
-          <p>
+            <span className="ml-16">
+              -Manque d&apos;investissement scolaire, Fatigue, impression de ne
+              pas être à la hauteur (et nous savons à quel point il y en a ...)
+              =<b> Méthode Decroly</b>
+            </span>
+            <br />
             Pédagogie active. Cette méthode est en rapport direct avec les
             besoins de l&apos;enfant, qui se traduisent dans ses centres
             d&apos;intérêt (médecine, végétaux, super-héros, légo ®, chevaux,
