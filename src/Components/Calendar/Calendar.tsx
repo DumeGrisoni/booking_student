@@ -48,7 +48,7 @@ const Calendar: FC<indexProps> = ({}) => {
         tileDisabled={({ date, view }) =>
           (view === 'month' && date.getDay() === 0) || date.getDay() === 7
         }
-        className="shadow-md shadow-secondary-blur rounded-md bg-secondary-var-1 w-[350px] lg:w-[450px] max-w-[350px] lg:max-w-full border border-secondary-blur p-0 lg:p-2 text-title lg:text-default"
+        className="shadow-md shadow-secondary-blur rounded-md bg-secondary-var-1 w-[350px] lg:w-[450px] max-w-[350px] lg:max-w-full border border-secondary-blur p-0 lg:p-2 text-default lg:text-default"
       />
       {hours ? (
         <div className="flex flex-col gap-7">
