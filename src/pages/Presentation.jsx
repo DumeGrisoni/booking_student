@@ -72,10 +72,10 @@ const Presentation = () => {
           </p>
           <ul>
             <li>
-              <p>- Analyse des profils</p>
+              <p className="ml-16 mb-7">- Analyse des profils</p>
             </li>
             <li>
-              <p>
+              <p className="ml-16 mb-7">
                 - Analyse des besoins et des attentes. Il s&apos;agit de
                 comprendre les besoins de l&apos;enfant.
               </p>
@@ -107,12 +107,12 @@ const Presentation = () => {
           </p>
           <ul>
             <li>
-              <p>
+              <p className="ml-16 mb-7">
                 - Besoin de bouger, de toucher = <b>Méthode montessori</b>
               </p>
             </li>
             <li>
-              <p>
+              <p className="ml-16 mb-7">
                 - Manque de confiance = <b>Pédagogie Freinet</b>
               </p>
             </li>
