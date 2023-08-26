@@ -1,7 +1,6 @@
 import { FC, useState } from 'react';
 import ReactCalendar from 'react-calendar';
-import { add, addMinutes, format } from 'date-fns';
-import { formatDate } from 'react-calendar/dist/cjs/shared/dateFormatter';
+import { add, format } from 'date-fns';
 
 interface indexProps {}
 
@@ -47,7 +46,7 @@ const Calendar: FC<indexProps> = ({}) => {
         view="month"
         onClickDay={(date) => setDate((prev) => ({ ...prev, onlyDate: date }))}
         tileDisabled={({ date, view }) =>
-          (view === 'month' && date.getDay() === 0) || date.getDay() === 5
+          (view === 'month' && date.getDay() === 0) || date.getDay() === 7
         }
         className="shadow-md shadow-secondary-blur rounded-md bg-secondary-var-1 w-[350px] lg:w-[450px] max-w-[350px] lg:max-w-full border border-secondary-blur p-0 lg:p-2 text-title lg:text-default"
       />

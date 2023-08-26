@@ -10,7 +10,7 @@ const BookingForm = () => {
           Choisir une option
         </option>
         <option value="particulier-1">Cours Particuliers 1H</option>
-        <option value="particulier-10">Cours Particuliers 10H</option>
+        <option value="particulier-10">Cours Particuliers 8H</option>
         <option value="descolarise">Enfant Déscolarisé</option>
       </select>
       <select
