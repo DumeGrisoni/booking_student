@@ -108,12 +108,12 @@ const Presentation = () => {
           <ul>
             <li>
               <p className="ml-16 mb-7">
-                - Besoin de bouger, de toucher = <b>Méthode montessori</b>
+                -Besoin de bouger, de toucher = <b>Méthode montessori</b>
               </p>
             </li>
             <li>
-              <p className="ml-16 mb-7">
-                - Manque de confiance = <b>Pédagogie Freinet</b>
+              <p className="ml-16">
+                -Manque de confiance = <b>Pédagogie Freinet</b>
               </p>
             </li>
           </ul>
@@ -123,9 +123,9 @@ const Presentation = () => {
             leurs échecs tout en parvenant à de belles réussites.
           </p>
           <p className="ml-16">
-            - Manque d&apos;investissement scolaire, Fatigue, impression de ne
+            -Manque d&apos;investissement scolaire, Fatigue, impression de ne
             pas être à la hauteur (et nous savons à quel point il y en a ...) =
-            Méthode Decroly.
+            <b> Méthode Decroly</b>
           </p>
           <p>
             Pédagogie active. Cette méthode est en rapport direct avec les
