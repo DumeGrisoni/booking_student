@@ -1,8 +1,8 @@
-import TaxBanner from './Components/TaxBanner.jsx';
-import OfferBanner from './Components/OfferBanner.jsx';
-import logo from './assets/logo.svg';
-import Text from './Components/Text.jsx';
-import image from './assets/image.jpg';
+import TaxBanner from '../Components/TaxBanner.jsx';
+import OfferBanner from '../Components/OfferBanner.jsx';
+import logo from '../assets/logo.svg';
+import Text from '../Components/Text.jsx';
+import image from '../assets/image.jpg';
 
 function Home() {
   return (
