@@ -4,7 +4,7 @@ import instagramIcon from '../assets/instagramIcon.svg';
 import emailIcon from '../assets/emailIcon.svg';
 const Footer = () => {
   return (
-    <section className=" h-auto pt-5 lg:pt-0 lg:h-[160px] flex-col lg:flex-row flex text-title w-full justify-center gap-5 lg:gap-[50%] items-center border-t border-grey-font">
+    <section className=" h-auto pt-5 lg:pt-0 lg:h-[160px] flex-col lg:flex-row flex text-default w-full justify-center gap-5 lg:gap-[50%] items-center border-t border-grey-font">
       {/* LEFT PART > TOP PART */}
       <div className=" text-primary lg:items-start items-center flex flex-col gap-2.5 lg:gap-7">
         <p>Siret : 952 620 045 00015</p>

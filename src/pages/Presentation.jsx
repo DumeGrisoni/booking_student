@@ -3,7 +3,7 @@ import Text from '../Components/Text.jsx';
 const Presentation = () => {
   return (
     <div className="flex flex-col justify-start items-center">
-      <section className="bg-secondary-var-1 h-full px-[2rem] lg:px-[8rem] lg:py-10 py-5 w-full flex flex-col gap-4 lg:gap-7">
+      <section className="bg-secondary-var-1 h-full px-[2rem] lg:px-[8rem] lg:py-10 py-5 w-full flex flex-col gap-4 lg:gap-7 mb-10">
         <Text title="Pour qui sont destinés ces cours ?">
           <p>
             <b>Pour tous les élèves de la maternelle à la 3ème.</b> Les troubles
@@ -70,61 +70,69 @@ const Presentation = () => {
             signifie prendre en compte leurs peurs et leurs angoisses ainsi que
             leurs difficultés.
           </p>
+          <ul>
+            <li>
+              <p>- Analyse des profils</p>
+            </li>
+            <li>
+              <p>
+                - Analyse des besoins et des attentes. Il s&apos;agit de
+                comprendre les besoins de l&apos;enfant.
+              </p>
+            </li>
+          </ul>
           <p>
-            C&apos;est une analyse des profils, des besoins et des attentes. Il
-            s&apos;agit de comprendre les besoins de l&apos;enfant. C&apos;est
-            ainsi que les difficultés pourront être surmontées. En effet, votre
-            enfant a sa propre manière d&apos;établir des liens entre les
-            différents éléments qui lui sont transmis. Une écoute attentive de
-            ses différentes théories permettra de mieux le comprendre et
-            d&apos;adapter les outils d&apos;apprentissage à mettre en œuvre.
+            C&apos;est ainsi que les difficultés pourront être surmontées. En
+            effet, votre enfant a sa propre manière d&apos;établir des liens
+            entre les différents éléments qui lui sont transmis. Une écoute
+            attentive de ses différentes théories permettra de mieux le
+            comprendre et d&apos;adapter les outils d&apos;apprentissage.
           </p>
           <p>
-            Ici on ne va pas vous dire que nous avons trouvé{' '}
-            <span className="font-bold">LA</span> méthode qui aidera votre
-            enfant. En effet, vous êtes sans aucun doute bien placé pour savoir
-            que tout individu est unique, ainsi toute méthode lui convenant sera
-            unique. Nous mettrons donc en place un pêle-mêle de méthodes
-            pédagogiques tout en incluant de nouvelle suggestion suivant son
-            profil atypique. Eh oui ! Nous sommes tous atypiques !
+            Ici on ne va pas vous dire que nous avons trouvé <b>LA</b> méthode
+            qui aidera votre enfant. En effet, vous êtes sans aucun doute bien
+            placé pour savoir que tout individu est unique, ainsi toute méthode
+            lui convenant sera unique.
           </p>
           <p>
             À mesure des rencontres avec votre enfant un lien fort sera créé,
             cela permettra d&apos;avoir un échange sans limite avec lui et de
             travailler ensemble pour lui donner les outils qui l&apos;aideront.
           </p>
-          <p className="font-bold">
-            Nous avons bien entendu des bases pédagogiques qui seront incluses
-            naturellement dans le travail que l&apos;on fera ensemble, voici
-            quelques exemples :
+          <p>
+            <b>
+              Nous avons bien entendu des bases pédagogiques, voici quelques
+              exemples :
+            </b>
           </p>
-          <ul className="flex flex-col gap-3 px-5">
+          <ul>
             <li>
-              - Suivant le profil de l&apos;enfant, celui-ci aura besoin de
-              bouger, de toucher nous nous orienterons donc vers des méthodes
-              telles que la méthode Montessori que l&apos;on ne présente plus.
+              <p>
+                - Besoin de bouger, de toucher = <b>Méthode montessori</b>
+              </p>
             </li>
             <li>
-              - Si l&apos;enfant manque de confiance une orientation naturelle
-              sera faite vers la pédagogie Freinet qui laisse les enfants
-              émettre leurs propres hypothèses, faire leurs propres découvertes
-              et éventuellement constater et admettre leurs échecs tout en
-              parvenant à de belles réussites.
-            </li>
-            <li>
-              - Pour les enfants qui manquent d&apos;investissements scolaires,
-              qui sont fatigués, qui pensent être bête (et nous savons à quel
-              point il y en a ...), la méthode Decroly pourra aussi être
-              utilisée.
-              <br />
-              Celle-ci consistant en une pédagogie active. Elle place
-              l&apos;enfant au centre de l&apos;apprentissage, ce n&apos;est pas
-              un enseignement fondé sur l&apos;imitation et la passivité. <br />
-              Cette méthode est en rapport direct avec les besoins de
-              l&apos;enfant, qui se traduisent dans ses centres d&apos;intérêt
-              (médecine, végétaux, super-héros, légo ®, chevaux, etc.).
+              <p>
+                - Manque de confiance = <b>Pédagogie Freinet</b>
+              </p>
             </li>
           </ul>
+          <p>
+            Elle laisse les enfants émettre leurs propres hypothèses, faire
+            leurs propres découvertes et éventuellement constater et admettre
+            leurs échecs tout en parvenant à de belles réussites.
+          </p>
+          <p className="ml-16">
+            - Manque d&apos;investissement scolaire, Fatigue, impression de ne
+            pas être à la hauteur (et nous savons à quel point il y en a ...) =
+            Méthode Decroly.
+          </p>
+          <p>
+            Pédagogie active. Cette méthode est en rapport direct avec les
+            besoins de l&apos;enfant, qui se traduisent dans ses centres
+            d&apos;intérêt (médecine, végétaux, super-héros, légo ®, chevaux,
+            etc.).
+          </p>
         </Text>
       </section>
     </div>

@@ -9,9 +9,9 @@ const PricingContainer = ({
   secondHour,
 }) => {
   return (
-    <div className="w-[300px] h-auto lg:h-[1000px] flex flex-col border items-center border-grey-font rounded-md shadow-md shadow-grey-font">
+    <div className="w-[300px] h-auto lg:h-[1300px] flex flex-col border items-center border-grey-font rounded-md shadow-md shadow-grey-font">
       {/* TITLE SECTION */}
-      <div className="mx-auto w-full items-center justify-center text-center flex h-[125px] bg-primary text-secondary-var-1 text-title">
+      <div className="mx-auto w-full items-center justify-center text-center flex min-h-[125px] bg-primary text-secondary-var-1 text-title">
         <h1>{title}</h1>
       </div>
       {/* TEXT SECTION */}
