@@ -15,9 +15,13 @@ const SignUp = () => {
     child_firstName: '',
     schoolLvl: null,
     child_age: null,
+    needs: '',
+    hobbies: '',
     twoChild_schoolLvl: null,
     twoChild_firstName: '',
     twoChild_age: null,
+    twoChild_hobbies: '',
+    twoChild_needs: '',
   });
 
   const [twoChilds, setTwoChilds] = useState(false);
@@ -52,9 +56,13 @@ const SignUp = () => {
           child_firstName: formData.child_firstName,
           schoolLvl: formData.schoolLvl,
           child_age: formData.child_age,
+          needs: formData.needs,
+          hobbies: formData.hobbies,
           twoChild_schoolLvl: formData.twoChild_schoolLvl,
           twoChild_firstName: formData.twoChild_firstName,
           twoChild_age: formData.twoChild_age,
+          twoChild_hobbies: formData.twoChild_hobbies,
+          twoChild_needs: formData.twoChild_needs,
         },
       },
     });
@@ -236,6 +244,28 @@ const SignUp = () => {
                 />
               </div>
             </div>
+            <div className="flex flex-col gap-1 w-full">
+              <label htmlFor="needs" className="font-bold">
+                Besoins de l&apos;enfant
+              </label>
+              <textarea
+                name="needs"
+                placeholder="Besoins de l'enfant ici"
+                className="p-1 border-grey-font border rounded-md w-full shadow-sm shadow-grey-font "
+                onChange={handleChange}
+              />
+            </div>
+            <div className="flex flex-col gap-1 w-full">
+              <label htmlFor="hobbies" className="font-bold">
+                Passions & hobbies
+              </label>
+              <textarea
+                name="hobbies"
+                placeholder="Décrivez ici"
+                className="p-1 border-grey-font border rounded-md w-full shadow-sm shadow-grey-font "
+                onChange={handleChange}
+              />
+            </div>
           </div>
           <div>
             <hr className="mt-7 mb-2" />
@@ -248,7 +278,7 @@ const SignUp = () => {
             </button>
           </div>
           {twoChilds ? (
-            <div>
+            <div className="flex flex-col gap-4">
               <div className="flex flex-col gap-1 lg:gap-">
                 <label htmlFor="twoChild_firstName" className="font-bold">
                   Prénom *
@@ -298,6 +328,28 @@ const SignUp = () => {
                     onChange={handleChange}
                   />
                 </div>
+              </div>
+              <div className="flex flex-col gap-1 w-full">
+                <label htmlFor="TwoChild_needs" className="font-bold">
+                  Besoins de l&apos;enfant
+                </label>
+                <textarea
+                  name="twoChild_needs"
+                  placeholder="Besoins de l'enfant ici"
+                  className="p-1 border-grey-font border rounded-md w-full shadow-sm shadow-grey-font "
+                  onChange={handleChange}
+                />
+              </div>
+              <div className="flex flex-col gap-1 w-full">
+                <label htmlFor="twoChild_hobbies" className="font-bold">
+                  Passions & hobbies
+                </label>
+                <textarea
+                  name="twoChild_hobbies"
+                  placeholder="Décrivez ici"
+                  className="p-1 border-grey-font border rounded-md w-full shadow-sm shadow-grey-font "
+                  onChange={handleChange}
+                />
               </div>
             </div>
           ) : (
