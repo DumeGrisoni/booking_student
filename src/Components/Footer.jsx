@@ -4,7 +4,7 @@ import instagramIcon from '../assets/instagramIcon.svg';
 import emailIcon from '../assets/emailIcon.svg';
 const Footer = () => {
   return (
-    <section className=" h-auto pt-5 lg:pt-0 lg:h-[160px] flex-col lg:flex-row flex text-default w-full justify-center gap-5 lg:gap-[50%] items-center border-t border-grey-font">
+    <section className=" h-auto pt-5 lg:pt-0 lg:h-[200px] flex-col lg:flex-row flex text-default w-full justify-center gap-5 lg:gap-[40%] items-center border-t border-grey-font">
       {/* LEFT PART > TOP PART */}
       <div className=" text-primary lg:items-start items-center flex flex-col gap-2.5 lg:gap-7">
         <p>Siret : 952 620 045 00015</p>
@@ -16,7 +16,7 @@ const Footer = () => {
         </Link>
       </div>
       {/* RIGHT PART > BOTTOM PART */}
-      <div className="flex flex-col gap-3 lg:gap-5 items-center lg:mb-0 mb-5">
+      <div className="flex flex-col gap-2 items-center lg:mb-0 mb-5">
         <h2 className="text-primary ">Contacts</h2>
         <p className="text-default text-primary">
           <b>Tel:</b> 06 25 74 55 69

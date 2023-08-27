@@ -5,7 +5,7 @@ import BookingForm from '../Components/BookingForm.jsx';
 import Calendar from '../Components/Calendar/Calendar.tsx';
 import { useState, useEffect } from 'react';
 import { supabase } from '../lib/helpers/supabaseClient.js';
-import Login from '../Components/Clients/Login.jsx';
+import SignUp from '../Components/Clients/SignUp.jsx';
 
 const Bookings = () => {
   const [session, setSession] = useState(null);
@@ -25,7 +25,11 @@ const Bookings = () => {
   }, []);
 
   if (!session) {
-    return <Login />;
+    return (
+      <div className="flex justify-center items-center lg:items-start px-[2rem] lg:px-[8rem] my-7">
+        <SignUp />
+      </div>
+    );
   } else {
     return (
       <div className="flex flex-col lg:items-start items-center gap-10 px-[2rem] lg:px-[8rem] my-7">

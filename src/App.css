@@ -24,6 +24,9 @@
   .form-input {
     @apply text-default text-grey-font font-bold w-full flex flex-col gap-5;
   }
+  .btn {
+    @apply text-secondary hover:text-primary rounded-md shadow-sm shadow-grey-font border border-secondary hover:border-primary  bg-primary hover:bg-secondary duration-300 ease-in-out transition-all;
+  }
 }
 
 @font-face {
@@ -37,9 +40,13 @@ body {
   margin: 0;
   z-index: 2;
 }
-
-.btn:hover {
-  background-color: red;
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
 }
 
 @media screen and (max-width: 1023px) {
