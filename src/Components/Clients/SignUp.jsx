@@ -213,12 +213,15 @@ const SignUp = () => {
                   <option value="default" defaultValue hidden>
                     Choisir une option
                   </option>
-                  <option value="6eme">6ème</option>
-                  <option value="5eme">5ème</option>
-                  <option value="4eme">4ème</option>
-                  <option value="3eme">3ème</option>
-                  <option value="2nd">2nd</option>
-                  <option value="1ere">1ère</option>
+                  <option value="cp">CP</option>
+                  <option value="CE1">CE1</option>
+                  <option value="CE2">CE2</option>
+                  <option value="CM1">CM1</option>
+                  <option value="CM2">CM2</option>
+                  <option value="6ème">6ème</option>
+                  <option value="5ème">5ème</option>
+                  <option value="4ème">4ème</option>
+                  <option value="3ème">3ème</option>
                 </select>
               </div>
               <div className="flex  flex-col gap-1">
