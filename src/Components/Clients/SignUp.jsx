@@ -115,7 +115,7 @@ const SignUp = () => {
           </div>
           {/* ADRESS */}
           <div className="flex flex-col lg:flex-row gap-3 lg:gap-5">
-            <div className="flex flex-col gap-1 lg:gap-">
+            <div className="flex flex-col gap-1 w-full">
               <label htmlFor="city" className="font-bold">
                 Ville *
               </label>
@@ -127,7 +127,7 @@ const SignUp = () => {
                 onChange={handleChange}
               />
             </div>
-            <div className="flex flex-col gap-1 lg:gap-">
+            <div className="flex flex-col gap-1 w-full">
               <label htmlFor="postale" className="font-bold">
                 Code Postal *
               </label>
@@ -170,11 +170,10 @@ const SignUp = () => {
           </p>
           <hr />
           {/* CHILDS */}
-          <div>
+          <div className="flex flex-col gap-4">
             {/* NAMES */}
-
             <div className="flex flex-col lg:flex-row gap-3 lg:gap-5">
-              <div className="flex flex-col gap-1 ">
+              <div className="flex flex-col gap-1 w-full">
                 <label htmlFor="child_lastName" className="font-bold">
                   Nom de famille *
                 </label>
@@ -186,7 +185,7 @@ const SignUp = () => {
                   onChange={handleChange}
                 />
               </div>
-              <div className="flex flex-col gap-1 lg:gap-">
+              <div className="flex flex-col gap-1 w-full ">
                 <label htmlFor="child_firstName" className="font-bold">
                   Prénom *
                 </label>
@@ -199,8 +198,8 @@ const SignUp = () => {
                 />
               </div>
             </div>
-            <div className="flex flex-col lg:flex-row items-center gap-3 lg:gap-5">
-              <div className="flex flex-col gap-1 flex-1">
+            <div className="flex flex-col lg:flex-row items-center gap-3 lg:gap-5  justify-start">
+              <div className="flex flex-col gap-1 w-full">
                 <label htmlFor="schoolLvl" className="font-bold">
                   Niveau Scolaire
                 </label>
@@ -224,7 +223,7 @@ const SignUp = () => {
                   <option value="3ème">3ème</option>
                 </select>
               </div>
-              <div className="flex  flex-col gap-1">
+              <div className="flex flex-col gap-1 w-full">
                 <label htmlFor="child_age" className="font-bold">
                   Age
                 </label>
@@ -239,7 +238,7 @@ const SignUp = () => {
             </div>
           </div>
           <div>
-            <hr className="mt-7" />
+            <hr className="mt-7 mb-2" />
             <p className=" text-default font-bold text-center">2ème enfant</p>
             <button
               className="btn flex justify-center items-center w-28 mx-auto"
@@ -263,7 +262,7 @@ const SignUp = () => {
                 />
               </div>
               <div className="flex flex-col lg:flex-row items-center gap-3 lg:gap-5">
-                <div className="flex flex-col gap-1 flex-1">
+                <div className="flex flex-col gap-1 w-full">
                   <label htmlFor="twoChild_schoolLvl" className="font-bold">
                     Niveau Scolaire
                   </label>
@@ -287,7 +286,7 @@ const SignUp = () => {
                     <option value="3ème">3ème</option>
                   </select>
                 </div>
-                <div className="flex  flex-col gap-1">
+                <div className="flex w-full flex-col gap-1">
                   <label htmlFor="twoChild_age" className="font-bold">
                     Age
                   </label>
@@ -304,7 +303,7 @@ const SignUp = () => {
           ) : (
             <></>
           )}
-          <hr className="mb-7 mt-2" />
+          <hr className="mb-7" />
           <button
             type="submit"
             className="p-1 lg:w-[70%] lg:mx-auto text-center btn"
