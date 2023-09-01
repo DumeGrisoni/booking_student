@@ -1,5 +1,5 @@
 import { Link, NavLink } from 'react-router-dom';
-import Text from '../Components/Text';
+import Text from '../Components/Utils/Text';
 import facebookIcon from '../assets/facebookIcon.svg';
 import instagramIcon from '../assets/instagramIcon.svg';
 import emailIcon from '../assets/emailIcon.svg';
@@ -84,10 +84,11 @@ const Contact = () => {
             </li>
           </ul>
         </div>
-        <div className="flex flex-col lg:gap-7 gap-5 items-center lg:mr-[100px] mt-5 lg:mt-10">
+        <div className="flex flex-col lg:gap-7 gap-5 items-center mb-7 lg:ml-5 mt-5 lg:mt-0">
           <h2 className="font-bold text-title text-primary">
             Envoyez-nous un message
           </h2>
+
           <FormInput />
         </div>
       </section>

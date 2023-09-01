@@ -1,8 +1,8 @@
 import { NavLink } from 'react-router-dom';
-import Button from '../Components/Button.jsx';
+import Button from '../Components/Utils/Button.jsx';
 import PricingContainer from '../Components/PricingContainer.jsx';
 import TaxBanner from '../Components/TaxBanner.jsx';
-import Text from '../Components/Text.jsx';
+import Text from '../Components/Utils/Text.jsx';
 const Pricing = () => {
   return (
     <div className="flex flex-col justify-center gap-10 items-center m-10">
@@ -15,7 +15,7 @@ const Pricing = () => {
         Déplacement en région bastiaise, Corse, suivi à domicile.
         <br /> Me contacter pour plus d&apos;informations.
       </p>
-      <div className="flex lg:flex-row flex-col justify-center gap-8 items-center mb-5">
+      <div className="flex lg:flex-row flex-wrap flex-col justify-center gap-8 items-center mb-5">
         <PricingContainer
           title="Cours particuliers"
           price="30€"

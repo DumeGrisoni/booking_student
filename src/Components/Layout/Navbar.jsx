@@ -1,11 +1,13 @@
 import { NavLink } from 'react-router-dom';
-import Logo from '../assets/logo.svg';
+import Logo from '../../assets/logo.svg';
 import { useState } from 'react';
 import { FiMenu } from 'react-icons/fi';
-import { AiOutlineClose } from 'react-icons/ai';
+import { AiOutlineClose, AiOutlineUser } from 'react-icons/ai';
+import { useAuth } from '../../lib/hooks/Auth.tsx';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { session, user } = useAuth();
 
   const Links = [
     { name: 'Tarifs', link: '/pricing' },
@@ -17,11 +19,11 @@ const Navbar = () => {
     <>
       <nav
         className={` ${
-          !isOpen ? 'h-[60px]' : 'h-[300px]'
-        } transition-all ease-out duration-300 lg:pt-0 w-full lg:h-[60px] lg:sticky fixed z-10 top-0 right-0 lg:left-0 bg-secondary border-b pb-4 lg:pb-0 border-b-grey-font lg:px-[100px] text-grey-font xl:px-[200px] shadow-md shadow-secondary-blur px-7`}
+          !isOpen ? 'h-[60px]' : 'h-[350px]'
+        } transition-all ease-out duration-300 lg:pt-0 w-full lg:h-[60px] lg:sticky fixed z-10 top-0 right-0 lg:left-0 bg-secondary border-b pb-4 lg:pb-0 border-b-grey-font  text-grey-font xl:px-[100px] shadow-md shadow-secondary-blur px-7`}
       >
         {/* Links Container */}
-        <div className="flex items-center justify-center lg:justify-between h-full gap-[30px]">
+        <div className="flex items-center justify-center lg:justify-between h-full gap-16">
           <div className="flex justify-center items-center text-center">
             {/* LOGO */}
             <NavLink
@@ -68,6 +70,19 @@ const Navbar = () => {
                 </NavLink>
               </li>
             ))}
+            {session ? (
+              <li className="flex flex-col items-center">
+                <NavLink
+                  to="/profile"
+                  className="flex flex-col items-center text-primary hover:text-primary-var-2 duration-300 ease-out transition-all"
+                >
+                  <AiOutlineUser className=" text-default" />
+                  <span className="">{user.user_metadata.name}</span>
+                </NavLink>
+              </li>
+            ) : (
+              <></>
+            )}
           </ul>
         </div>
       </nav>

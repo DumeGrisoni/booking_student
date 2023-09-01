@@ -1,4 +1,4 @@
-import Text from '../Components/Text.jsx';
+import Text from '../Components/Utils/Text.jsx';
 
 const Presentation = () => {
   return (
@@ -22,6 +22,7 @@ const Presentation = () => {
             l&apos;ensemble de ses capacités.
           </p>
         </Text>
+
         <Text>
           <p className="font-bold">Si vous avez besoin de soutient afin :</p>{' '}
           <p>
