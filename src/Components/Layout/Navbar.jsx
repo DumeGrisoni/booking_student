@@ -73,7 +73,11 @@ const Navbar = () => {
             {session ? (
               <li className="flex flex-col items-center">
                 <NavLink
-                  to="/profile"
+                  to={
+                    user.id != import.meta.env.VITE_SUPABASE_ID
+                      ? '/profile'
+                      : '/admin'
+                  }
                   className="flex flex-col items-center text-primary hover:text-primary-var-2 duration-300 ease-out transition-all"
                 >
                   <AiOutlineUser className=" text-default" />

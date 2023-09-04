@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { useAuth } from '../../lib/hooks/Auth';
 import { supabase } from '../../lib/helpers/supabaseClient';
-import { NavLink, redirect, useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import ParentInfos from '../../Components/Clients/ParentInfos';
 

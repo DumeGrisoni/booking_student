@@ -3,7 +3,8 @@
     "baseUrl": ".",
     "paths": {
       "@lib/*": ["src/lib/*"],
-      "@components/*": ["src/components/*"]
+      "@components/*": ["src/components/*"],
+      "@types/*": ["src/lib/helpers/*"]
     },
     "target": "es2017",
     "lib": ["dom", "dom.iterable", "esnext"],
@@ -21,6 +22,14 @@
     "incremental": true,
     "noUncheckedIndexedAccess": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.cjs", "**/*.mjs"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.cjs",
+    "**/*.mjs",
+    "src/pages/Clients/Bookings.jsx",
+    "src/Components/Calendar/Calendar.jsx"
+  ],
   "exclude": ["node_modules"]
 }

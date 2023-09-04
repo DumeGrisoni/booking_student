@@ -16,6 +16,7 @@ import SignUp from './pages/Clients/SignUp.jsx';
 import Profile from './pages/Clients/Profile.jsx';
 import NewChild from './pages/Clients/NewChild.jsx';
 import UpdateChild from './pages/Clients/UpdateChild.jsx';
+import Admin from './pages/Admin/Admin.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -34,6 +35,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <Route exact path="/presentation" element={<Presentation />} />
             <Route exact path="/pricing" element={<Pricing />} />
             <Route exact path="/profile" element={<Profile />} />
+            <Route exact path="/admin" element={<Admin />} />
           </Routes>
         </ScrollToTop>
         <Footer />

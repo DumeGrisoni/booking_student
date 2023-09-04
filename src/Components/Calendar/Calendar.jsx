@@ -1,22 +1,18 @@
-import { FC, useState } from 'react';
+/* eslint-disable react/prop-types */
+import { useState } from 'react';
 import ReactCalendar from 'react-calendar';
 import { add, format } from 'date-fns';
+import Button from '../Utils/Button';
 
-interface indexProps {}
+// interface indexProps {
+//   date: DateTime;
+// }
 
-interface DateType {
-  onlyDate: Date | null;
-  dateTime: Date | null;
-}
-
-const Calendar: FC<indexProps> = ({}) => {
-  const [date, setDate] = useState<DateType>({
+const Calendar = (props) => {
+  const [date, setDate] = useState({
     onlyDate: null,
     dateTime: null,
   });
-
-  const [selected, setSelected] = useState(false);
-
   const getHours = () => {
     if (!date.onlyDate) return;
     const { onlyDate } = date;
@@ -37,14 +33,20 @@ const Calendar: FC<indexProps> = ({}) => {
   };
 
   const hours = getHours();
-  console.log(date.dateTime);
+  const handleDate = (date) => {
+    setDate((prevDate) => ({ ...prevDate, onlyDate: date }));
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    props.onSubmit(date);
+  };
 
   return (
     <div className="flex flex-col gap-7">
       <ReactCalendar
         minDate={new Date()}
         view="month"
-        onClickDay={(date) => setDate((prev) => ({ ...prev, onlyDate: date }))}
+        onClickDay={handleDate}
         tileDisabled={({ date, view }) =>
           (view === 'month' && date.getDay() === 0) || date.getDay() === 7
         }
@@ -81,6 +83,9 @@ const Calendar: FC<indexProps> = ({}) => {
                 'H'
               : ''}
           </p>
+          <div className="flex mx-auto justify-items-center">
+            <Button onClick={handleSubmit}>Reserver</Button>
+          </div>
         </div>
       ) : (
         <div></div>
